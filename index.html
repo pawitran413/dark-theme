@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMTE Unsoed</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+<body>
+    <!-- AKSEN BACKGROUND -->
+    <!-- <img src="img/bg-01.svg" class="bg-img"> -->
+
+    <!-- NAVBAR DARI GITHUB -->
+    <header>
+        <nav class="navbar">
+            <ul class="brand">
+                <img src="img/Asset 1.svg">
+                <li>Ethera Mosaika</li>
+            </ul>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#berita">Berita</a></li>
+                <li><a href="#emagz">E-Magz</a></li>
+                <li><a href="https://bit.ly/HMTE_DATABASE_UNSOED">HMTE Database</a></li>
+            </ul>
+            <a href="#" class="tentang-kami">Tentang kami</a>
+        </nav>
+    </header>
+
+    <!-- NAVBAR PUNYA SENDIRI -->
+    <!-- <div class="navbar">
+        <ul class="brand">
+            <img src="img/Asset 1.svg">
+            <li>Ethera Mosaika</li>
+        </ul>
+        <ul class="navbar-kontrol">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#berita">Berita</a></li>
+            <li><a href="#emagz">E-Magz</a></li>
+            <li><a href="https://bit.ly/HMTE_DATABASE_UNSOED">HMTE Database</a></li>
+        </ul>
+        <a href="#" class="tentang-kami">Tentang kami</a>
+    </div> -->
+
+    <!-- BERANDA -->
+    <div class="beranda" id="beranda">
+        <div class="teks-judul">
+            <h1>Himpunan Mahasiswa Teknik Elektro Unsoed</h1>
+            <p>Website resmi Himpunan Mahasiswa Teknik Elektro Universitas Jenderal Soedirman</p>
+        </div>
+        <div class="logo">
+            <img src="img/Asset 1.svg">
+        </div>
+    </div>
+    
+    <!-- BERITA -->
+    <div class="berita" id="berita">
+        <div class="judul-bagian-berita">
+            <h1>Berita</h1>
+            <p>Terkait program kerja HMTE Unsoed yang telah terlaksana</p>
+        </div>
+        <div class="container-berita">
+            <div class="baris1">
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+            <div class="baris2">
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- E-MAGZ -->
+    <div class="emagz" id="emagz">
+        <div class="teks-emagz">
+            <h1>E-Magz</h1>
+            <p>Electrical Magazine sebagai salah satu program kerja divisi Medkominfo</p>
+            <a href="#">Emagz lainnya</a>
+        </div>
+        <div class="emagz-slide">
+            <div class="container-gambar">
+    
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+        
+                <img src="emagz/page1.jpg" class="gambar">
+                <img src="emagz/page2.jpg" class="gambar">
+                <img src="emagz/page3.jpg" class="gambar">
+                <img src="emagz/page4.jpg" class="gambar">
+                <img src="emagz/page5.jpg" class="gambar">
+                <img src="emagz/page6.jpg" class="gambar">
+                <img src="emagz/page7.jpg" class="gambar">
+                <img src="emagz/page8.jpg" class="gambar">
+                <img src="emagz/page9.jpg" class="gambar">
+                <img src="emagz/page10.jpg" class="gambar">
+                <img src="emagz/page11.jpg" class="gambar">
+        
+                <a class="next" onclick="plusSlides(1)">❯</a>
+        
+            </div>
+        
+            <div id="halamanAktif"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/mobile-navbar.js"></script>
+
+</body>
+</html>
