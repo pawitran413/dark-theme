@@ -6,6 +6,7 @@
 body{
     background-color: #121316;
     font-family: "Montserrat", serif;
+    overflow-x: hidden;
 }
 
 .bg-img{
