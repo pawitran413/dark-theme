@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #121316;
+    font-family: "Montserrat", serif;
+}
+
+.bg-img{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+/* AKSEN BG */
+
+/* NAVBAR PUNYA SENDIRI*/
+
+.navbar{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    color: white;
+}
+
+.navbar .tentang-kami{
+    text-decoration: none;
+    color: white!important;
+    font-size: 13px;
+    font-weight: 600;
+    padding-right: 23px;
+    padding-left: 23px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #1e1f22;
+    border-radius: 25px;
+}
+
+.navbar ul li{
+    list-style-type: none;
+}
+
+.navbar .brand{
+    display: flex;
+    gap: 16.31px;
+    align-items: center;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.navbar .brand img{
+    width: 28px;
+}
+
+.navbar .navbar-kontrol{
+    display: flex;
+    gap: 55px;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.navbar .navbar-kontrol li a{
+    text-decoration: none;
+    color: white!important;
+}
+
+.tombol-navbar-hp{
+    display: none;
+}
+
+.navbar .tombol-navbar-hp .line1, .line2, .line3{
+    background-color: white;
+    height: 2px;
+    width: 23px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+/* .navbar .tombol-navbar-hp .line1{
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.navbar .tombol-navbar-hp .line2{
+    opacity: 0;
+}
+
+.navbar .tombol-navbar-hp .line3{
+    transform: rotate(45deg) translate(-5px, -5px);
+} */
+
+.navbar-hp{
+    background-color:#121316;
+    color: white;
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    top: 80px;
+    left: 100vw;
+    transition: left 0.3s ease-in-out;
+}
+
+.navbar-hp ul li {
+    margin: 20px;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    .navbar{
+        gap: 160px;
+    }
+
+    .navbar .navbar-kontrol, .tentang-kami{
+        display: none;
+    }
+
+    .navbar .tombol-navbar-hp{
+        display: block;
+    }
+}
+
+/* BERANDA */
+
+.beranda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    min-height: 600px;
+    width: 100%;
+}
+
+.beranda .teks-judul{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 595px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.beranda .teks-judul h1{
+    width: 595px;
+    font-size: 3.25rem;
+    font-weight: 600;
+    line-height: 1.46153;
+}
+
+.beranda .teks-judul p{
+    width: 519.31px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.beranda .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 366.6429px;
+    height: 409.6071px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 30px;
+}
+
+.beranda .logo img{
+    width: 271.213px;
+}
+
+/* BERITA */
+
+.berita{
+    min-height: 680px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 31px;
+}
+
+.berita .judul-bagian-berita{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.berita .judul-bagian-berita h1{
+    font-size: 52px;
+    font-weight: 600;
+    color: white;
+}
+
+.berita .judul-bagian-berita p{
+    width: 513px;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+.container-berita{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+.baris1, .baris2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card{
+    width: 500px;
+    height: 210px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 25px;
+}
+
+/* EMAGZ */
+
+.emagz{
+    min-height: 680px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 183px;
+}
+
+.emagz .teks-emagz{
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    color: white;
+}
+
+.emagz .teks-emagz h1{
+    font-size: 52px;
+    font-weight: 600;
+}
+
+.emagz .teks-emagz p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.emagz .teks-emagz a{
+    text-decoration: none;
+    color: white!important;
+    font-size: 13px;
+    font-weight: 600;
+    padding-right: 23px;
+    padding-left: 23px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #1e1f22;
+    border-radius: 25px;
+}
+
+.emagz .emagz-slide{
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.emagz .emagz-slide #halamanAktif{
+    color: white;
+}
+
+.emagz .emagz-slide .container-gambar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emagz .emagz-slide .container-gambar .prev, .next{
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    cursor: pointer;
+}
+
+.emagz .emagz-slide .container-gambar img{
+    height: 610px;
+    margin: 10px;
+}
+
+/* UNTUK HP */
+
+@media (max-width: 600px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .navbar .brand{
+        align-items: center;
+        font-size: 12px;
+    }
+    
+    .navbar .brand img{
+        width: 20px;
+    }
+
+    .beranda{
+        gap: 40px;
+    }
+
+    .beranda .teks-judul{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        max-width: 300px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .beranda .teks-judul h1{
+        width: 300px;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1.46153;
+    }
+
+    .beranda .teks-judul p{
+        width: 250px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.3;
+    }
+
+    .beranda .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 340px;
+        background-color: rgba(255, 255, 255, 0.15);
+        border-radius: 30px;
+    }
+    
+    .beranda .logo img{
+        width: 220px;
+    }
+
+    .tombol-navbar-hp{
+        display: block;
+    }
+
+    .berita .judul-bagian-berita h1{
+        font-size: 30px;
+        font-weight: 600;
+        color: white;
+    }
+    
+    .berita .judul-bagian-berita p{
+        width: 300px;
+        font-size: 12px;
+        font-weight: 400;
+        color: white;
+    }
+
+    .container-berita{
+        gap: 15px;
+    }
+
+    .baris1, .baris2{
+        gap: 15px;
+    }
+
+    .card{
+        width: 300px;
+        height: 126px;
+        background-color: rgba(255, 255, 255, 0.15);
+        border-radius: 25px;
+    }
+
+    .emagz{
+        margin-top: 20px;
+        margin-bottom: 20px; /* kalo udah ada bawahnya, ilangin */
+    }
+
+    .emagz .teks-emagz{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        color: white;
+    }
+
+    .emagz .teks-emagz h1{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    
+    .emagz .teks-emagz p{
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .emagz .teks-emagz a{
+        display: none;
+    }
+
+    .emagz{
+        min-height: 680px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .emagz .emagz-slide .container-gambar .prev{
+        padding-left: 30px;
+    }
+    
+    .emagz .emagz-slide .container-gambar .next{
+        padding-right: 30px;
+    }
+
+    .emagz .emagz-slide .container-gambar img{
+        max-height: 70vh;
+    }
+}
