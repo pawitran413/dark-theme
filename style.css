@@ -107,11 +107,17 @@ body{
 .container-navbar-hp{
     background-color: #121316;
     width: 0vw;
+    z-index: 2;
 }
 
-.navbar-hp ul li {
-    margin: 20px;
+.container-navbar-hp li{
     font-size: 13px;
+    margin: 20px;
+}
+
+.container-navbar-hp li a{
+    text-decoration: none;
+    color: white!important;
 }
 
 @media (max-width: 600px) {
